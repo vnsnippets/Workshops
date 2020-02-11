@@ -20,9 +20,8 @@ namespace Exile.Mobile.Views
 
             menuItems = new List<HomeMenuItem>
             {
-                new HomeMenuItem { Title="Home" },
+                new HomeMenuItem { Id = MenuItemType.Home, Title="Home" },
                 new HomeMenuItem { Id = MenuItemType.Browse, Title="Travels" },
-                new HomeMenuItem { Title="Profile" },
                 new HomeMenuItem { Id = MenuItemType.About, Title="About" }
             };
 

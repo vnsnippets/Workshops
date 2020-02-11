@@ -21,7 +21,7 @@ namespace Exile.Mobile.Views
 
             MasterBehavior = MasterBehavior.Default;
 
-            //MenuPages.Add((int)MenuItemType.Browse, (NavigationPage)Detail);
+            MenuPages.Add((int)MenuItemType.Home, (NavigationPage)Detail);
         }
 
         public async Task NavigateFromMenu(int id)

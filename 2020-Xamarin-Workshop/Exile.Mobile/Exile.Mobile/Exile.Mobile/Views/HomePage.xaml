@@ -22,7 +22,8 @@
                 <Label Text="BORD CASCADE" TextColor="Black" HorizontalTextAlignment="Center" />
             </StackLayout>
             
-            <Button Text="CREATE NEW TRAVEL" HorizontalOptions="Center" Padding="20"></Button>
+            <Button Clicked="CreateItem_Clicked"
+                    Text="CREATE NEW TRAVEL" HorizontalOptions="Center" Padding="20"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

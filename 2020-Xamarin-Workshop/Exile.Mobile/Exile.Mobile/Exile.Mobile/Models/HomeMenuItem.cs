@@ -6,6 +6,7 @@ namespace Exile.Mobile.Models
 {
     public enum MenuItemType
     {
+        Home,
         Browse,
         About
     }

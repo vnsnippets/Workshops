@@ -16,5 +16,10 @@ namespace Exile.Mobile.Views
         {
             InitializeComponent();
         }
+
+        private async void CreateItem_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new NewItemPage()));
+        }
     }
 }

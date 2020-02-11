@@ -32,6 +32,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Button Text="GOOGLE SIGN IN" Margin="15" Padding="20" HorizontalOptions="Center"></Button>
         </StackLayout>
     </StackLayout>
 </ContentPage>
