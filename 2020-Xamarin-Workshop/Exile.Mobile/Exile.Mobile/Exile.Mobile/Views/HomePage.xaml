@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Exile.Mobile.Views.HomePage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="CenterAndExpand"
+                     Margin="20">
+            <Label HorizontalTextAlignment="Center"
+                   Text="YOUR LATEST ADVENTURE"
+                   FontSize="16"
+                   TextColor="Black" />
+            <Grid Padding="15">
+                <Image Source="sample.png" Aspect="AspectFit" />
+            </Grid>
+            <StackLayout Margin="0,0,0,20">
+                <Label Text="ANOTHER SECRET PLACE" FontSize="16"
+                       TextColor="Black" HorizontalTextAlignment="Center" />
+                <Label Text="BORD CASCADE" TextColor="Black" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            
+            <Button Text="CREATE NEW TRAVEL" HorizontalOptions="Center" Padding="20"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

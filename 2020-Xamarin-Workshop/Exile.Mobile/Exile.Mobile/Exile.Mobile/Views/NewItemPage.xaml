@@ -4,20 +4,29 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Exile.Mobile.Views.NewItemPage"
-             Title="New Item">
+             x:Class="Exile.Mobile.Views.NewItemPage">
     
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
-        <ToolbarItem Text="Save" Clicked="Save_Clicked" />
     </ContentPage.ToolbarItems>
     
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="15">
-            <Label Text="Text" FontSize="Medium" />
-            <Entry Text="{Binding Item.Text}" d:Text="Item name" FontSize="Small" />
+            <Label Text="Title" FontSize="Medium" />
+            <Entry Placeholder="E.G. TRIP DOWN MEMORY LANE" FontSize="Small" />
+
+            <Label Text="Location" FontSize="Medium" />
+            <Entry Placeholder="E.G. BAGATELLE MALL" FontSize="Small" />
+
+            <Label Text="Cover Image (URL)" FontSize="Medium" />
+            <Entry Placeholder="E.G. GOOGLE.COM" FontSize="Small" />
+
             <Label Text="Description" FontSize="Medium" />
-            <Editor Text="{Binding Item.Description}" d:Text="Item description" FontSize="Small" Margin="0" />
+            <Editor Placeholder="BRIEF DESCRIPTION OF YOUR ADVENTURE"
+                    VerticalOptions="FillAndExpand"
+                    FontSize="Small" Margin="0" />
+
+            <Button Text="SAVE TRAVEL LOG" Padding="20" HorizontalOptions="Center"></Button>
         </StackLayout>
     </ContentPage.Content>
     
